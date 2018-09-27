@@ -1,9 +1,16 @@
 function add(a,b){
-    return a+b;
+    return a+b;}
 function sub(a,b){
-    return a-b;
+    return a-b;}
 function mul(a,b){
-    return a*b;
+    return a*b;}
+function rem(a,b){
+    if(b==0){
+        return new Error('zero divider error.');
+    }
+    return a%b;
+}
+    
 function div(a,b){
     if(b==0){
         return new Error('zero divider error.');
@@ -19,6 +26,6 @@ module.exports ={
     sub:sub,
     mul:mul,
     div:div,
+    rem:rem,
     getE:getE
-
 }

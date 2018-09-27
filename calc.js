@@ -8,6 +8,12 @@ calc.sub=function(a,b){
 calc.mul=function(a,b){
     return a*b;
 }
+calc.rem=function(a,b){
+    if(b==0){
+        return new Error('zero divider error.');
+    }
+    return a%b;
+}
 calc.div=function(a,b){
     if(b==0){
         return new Error('zero divider error.');
